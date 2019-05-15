@@ -1,0 +1,37 @@
+.asstes-detail-container{
+    width: 1000px;
+    margin: 50px auto;
+    .asstes-detail-header{
+        text-align: center;
+        line-height: 60px;
+        font-size: 36px;
+    }
+    .asstes-detail-main{
+        border:1px solid #666;
+        .el-row.col-height-40{
+            border-bottom:1px solid #ccc;
+        }
+        .asstes-detail-table{
+            padding:20px 0 0;
+            border-bottom:1px solid #ccc;
+            .el-main{
+                padding:0 20px 20px;
+                .el-table{
+                    th.gutter{
+                        display: table-cell!important;
+                    }
+                }
+            }
+            .el-footer{
+                .el-row{
+                    padding:0 0 20px;
+                }
+            }
+        }
+        .el-row.task-data-item{
+            margin:0 40px;
+            padding:10px 0;
+            border-bottom:1px solid #ccc;
+        }
+    }
+}

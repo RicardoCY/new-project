@@ -1,0 +1,33 @@
+.news-detail-container{
+    padding:20px 0;
+    .el-header,.el-main{
+        padding:0;
+    }
+    .news-detail-header{
+        padding-left:20px;
+        margin-bottom:10px;
+    }
+    .left{
+        .el-icon-news{
+            width:60px;
+            height:60px;
+            line-height:60px;
+            font-size:60px;
+            color:#409EFF;
+        }
+    }
+    .right{
+        padding-left:5px;
+        .top{
+            font-size:24px;
+            line-height:36px;
+        }
+        .bottom{
+            color:#B8B8B8;
+        }
+    }
+    .news-detail-main{
+        border-top:1px solid #409EFF;
+        padding:10px 20px;
+    }
+}

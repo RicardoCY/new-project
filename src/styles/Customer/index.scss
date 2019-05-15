@@ -1,0 +1,60 @@
+
+		.header{
+			display:flex;
+			align-items:center;
+			justify-content:space-between;
+			margin-bottom:10px;
+			.el-select .el-input{
+				width:110px;
+			}
+			.input-with-select .el-input-group__prepend{
+				background-color:#fff;
+			}
+		}
+		.main{
+      flex:1;
+      display:flex;
+			flex-direction:column;
+			.el-table{
+				flex:1;
+				th.gutter{
+					display: table-cell!important;
+				}
+				.el-button+.el-button{
+					margin-left:0;
+				}
+					}
+				}
+		.footer{
+			height:60px;
+			display:flex;
+			align-items:center;
+			justify-content:space-between;
+		}
+	
+	.el-dialog{
+		.el-dialog__body{
+			padding-bottom:0;
+		}
+		.el-form{
+			display:flex;
+			flex-direction: column;
+			align-items:center;
+			justify-content:space-between;
+			.el-form-item__content{
+				width:220px!important;
+			}
+		}
+	}
+
+.customer-index-dropdown{
+	.el-checkbox-group{
+		width:120px;
+		padding-left:20px;
+		display:flex;
+		flex-direction:column;
+		.el-checkbox+.el-checkbox{
+			margin-left:0;
+		}
+	}
+}

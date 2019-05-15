@@ -1,0 +1,102 @@
+.dashboard-company-container{
+    .detail-container{
+        margin: 30px;
+      }
+    
+      .home-container{
+        display: flex;
+        .company-header{
+          margin:0 10px 8px;
+          height:25px;
+         
+          display:flex;
+          justify-content: space-between;
+          h3{
+            margin-left:10px;
+            height:24px;
+            font-size:16px;
+            line-height:24px;
+           
+          }
+          i{
+            width:24px;
+            height:24px;
+            font-size:14px;
+            text-align:center;
+            line-height:24px;
+            color:#666;
+            cursor: pointer;
+          }
+        }
+        &-info{
+          flex: 2;
+    
+          .news-container{
+            position: relative;
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,.12), 0 0 6px 0 rgba(0,0,0,.04);
+            a{
+              color:#515a6e;
+            }
+            .news-item{
+              display: flex;
+              height:56px;
+              padding: 5px 20px;
+              justify-content: space-between;
+              .news-item-title{
+                overflow:hidden;
+                text-overflow:ellipsis;
+                white-space:nowrap;
+                max-width:450px;
+              }
+              .news-item-time{
+                width:65px;
+              }
+              &:hover{
+                color: #409EFF;
+                cursor: pointer;
+              }
+            }
+            .pagination-container{
+             
+            }
+          }
+    
+        }
+        &-slider{
+          width: 520px;
+          .el-carousel{
+            margin:0 20px;
+            .el-carousel__button{
+              width:8px;
+            }
+            .photo-item{
+              width:100%;
+              height:100%;
+              img{
+                width:100%;
+                height:100%;
+              }
+            }
+          }
+          .email-box{
+            padding:30px 40px;
+            .el-aside{
+              height:100%;
+              img{
+                width:100%;
+                height:100%;
+              }
+            }
+            .el-header{
+              color:#409EFF;
+              font-size:20px;
+              line-height:30px;
+            }
+            .el-main{
+              padding:20px 20px 0;
+              font-size:16px;
+            }
+          }
+        }
+      }
+}

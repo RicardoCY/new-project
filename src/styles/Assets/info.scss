@@ -1,0 +1,38 @@
+.assets-info-container{
+    overflow: hidden;
+    .el-container{
+        .el-select .el-input{
+            min-width:110px;
+            max-width:160px;
+        }
+        .search-title{
+           padding:20px 0;
+           font-size:20px;
+           color:#409EFF;
+        }
+        .select-label{
+            font-size:14px;
+            color:#777;
+            padding:0 10px;
+        }
+        .assets-info-footer{
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+        }
+        .el-table{
+            th.gutter{
+                display: table-cell!important;
+            }
+        }
+    }
+    .assets-info-header{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        .search-input{
+            margin-left:10px;
+            max-width:450px;
+        }
+    }
+}

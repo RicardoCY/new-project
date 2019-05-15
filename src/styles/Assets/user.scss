@@ -1,0 +1,15 @@
+.assets-user-container{
+    overflow: hidden;
+    .assets-user-header{
+        font-size:20px;
+        color:#409EFF;
+        line-height:50px;
+        padding-bottom:10px;
+        border-bottom:2px solid #f3f3f3;
+    }
+    .el-table{
+        th.gutter{
+            display: table-cell!important;
+        }
+    }
+}

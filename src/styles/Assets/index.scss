@@ -1,0 +1,44 @@
+.assets-common-container{
+    overflow: hidden;
+    .assets-common-header{
+        font-size:24px;
+        
+    }
+    .assets-common-title{
+        font-size:20px;
+    }
+    .el-table{
+        th.gutter{
+            display: table-cell!important;
+        }
+    }
+    .el-dialog{
+        .el-header{
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            .select-label{
+                font-size:14px;
+                color:#777;
+                padding:0 10px;
+            }
+            .search-input{
+                margin-left:10px;
+                max-width:450px;
+            }
+            // .el-select .el-input{
+            //     min-width:110px;
+            //     max-width:160px;
+            // }
+        }
+        .assets-common-dialog-footer{
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+        }
+        .el-select .el-input{
+            min-width:110px;
+            max-width:160px;
+        }
+    }
+}
