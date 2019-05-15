@@ -157,6 +157,7 @@
                     :value="item.value"
                   ></el-option>
                 </el-select>
+                <!-- 请输入内容 -->
                 <el-input class="search-input" placeholder="请输入内容" v-model="searchValue">
                   <el-select v-model="selectValue" slot="prepend" placeholder="请选择">
                     <el-option label="资产编号" value="id"></el-option>
