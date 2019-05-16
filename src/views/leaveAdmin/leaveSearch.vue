@@ -74,7 +74,6 @@
                 <el-table-column prop="createdTime" label="创建时间" min-width="100"></el-table-column>
                 <el-table-column prop="hours" width="200" label="请假时长(小时)"></el-table-column>
                 <el-table-column prop="message" min-width="200" label="请假说明"></el-table-column>
-
                 <el-table-column prop="state" label="当前状态" min-width="150">
                   <template slot-scope="scope">
                     <span>{{parseState[scope.row.state]}}</span>
@@ -120,6 +119,11 @@
               </div>
             </el-tab-pane>
           </el-tabs>
+          <el-footer style="text-align:center;">
+              <el-button style="width:135px;margin-left:10px" type="primary" :disabled="downloading" @click="exportExcel">
+              <i class="el-icon-download"></i> 导出请假单
+            </el-button>
+            </el-footer>
         </div>
       </div>
     </div>
@@ -137,6 +141,7 @@ export default {
       tableCount: 0,
       rejectCount: 0,
       processCount: 0,
+      downloading:false,
       endCount: 0,
       tableData: [],
       rejectData: [],
@@ -228,6 +233,18 @@ export default {
           nowTab: this.tabVal
         }
       });
+    },
+    exportExcel(){
+      this.downloading = true;
+      let timer = null;
+      if (!timer) {
+        timer = setTimeout(() => {
+          window.location.href = "http://192.168.0.112:6008/v2/oaLeave/export?states=1&userId=13&id=1&title=1&applicant=1&projectTeam=1&deptName=1&phone=1&hours=1&message=1&state=1&remark=1&processId=1&createdTime=1";
+          this.downloading = false;
+        }, 1000);
+      } else {
+        return false;
+      }
     }
   },
   mounted() {
